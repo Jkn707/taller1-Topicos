@@ -28,6 +28,41 @@
                             <a href="#" class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white">=)</a>
                         </div>
                     </li>
+                    {% if active_link == 'matched_vacancies' %}
+                        <li class="active">
+                            <a href="{% url 'dashboard_employee' %}" class="text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">Volver</a>
+                        </li>
+                    {% endif %}
+                    {% if active_link == 'applied_to_vacancy' %}
+                        <li class="active">
+                            <a href="{% url 'dashboard_employee' %}" class="text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">Volver</a>
+                        </li>
+                    {% endif %}
+                    {% if active_link == 'register_company' %}
+                        <li class="active">
+                            <a href="{% url 'login' %}" class="text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">Volver</a>
+                        </li>
+                    {% endif %}
+                    {% if active_link == 'register_employee' %}
+                        <li class="active">
+                            <a href="{% url 'login' %}" class="text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">Volver</a>
+                        </li>
+                    {% endif %}
+                    {% if active_link == 'upload_vacancy' %}
+                        <li class="active">
+                            <a href="{% url 'dashboard_company' %}" class="text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">Volver</a>
+                        </li>
+                    {% endif %}
+                    {% if active_link == 'vacancy_listcompany' %}
+                        <li class="active">
+                            <a href="{% url 'dashboard_company' %}" class="text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">Volver</a>
+                        </li>
+                    {% endif %}
+                    {% if active_link == 'vacancy_listemployee' %}
+                        <li class="active">
+                            <a href="{% url 'dashboard_employee' %}" class="text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">Volver</a>
+                        </li>
+                    {% endif %}
                 </ol>
             </div>
         </nav>
